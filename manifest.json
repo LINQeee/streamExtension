@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "streamExtension",
+    "version": "1.0",
+    "description": "",
+    "permissions": ["activeTab"],
+    "host_permissions": ["http://*/*", "https://*/*"],
+    "action": {},
+    "content_scripts": [
+        {
+          "matches": ["*://*.youtube.com/*"],
+          "js": ["content.js"]
+        }
+      ]
+  }
+  
